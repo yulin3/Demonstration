@@ -127,6 +127,20 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+        "id": "cordova-plugin-dialogs.notification",
+        "merges": [
+            "navigator.notification"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-dialogs/www/android/notification.js",
+        "id": "cordova-plugin-dialogs.notification_android",
+        "merges": [
+            "navigator.notification"
+        ]
+    },
+    {
         "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
         "id": "cordova-plugin-file.DirectoryEntry",
         "clobbers": [
@@ -301,20 +315,6 @@ module.exports = [
         "runs": true
     },
     {
-        "file": "plugins/cordova-plugin-dialogs/www/notification.js",
-        "id": "cordova-plugin-dialogs.notification",
-        "merges": [
-            "navigator.notification"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-dialogs/www/android/notification.js",
-        "id": "cordova-plugin-dialogs.notification_android",
-        "merges": [
-            "navigator.notification"
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
         "id": "cordova-plugin-splashscreen.SplashScreen",
         "clobbers": [
@@ -331,12 +331,12 @@ module.exports.metadata =
     "cordova-plugin-console": "1.0.1",
     "cordova-plugin-contacts": "1.1.0",
     "cordova-plugin-device": "1.0.1",
+    "cordova-plugin-dialogs": "1.1.1",
     "cordova-plugin-file": "2.1.0",
     "cordova-plugin-geolocation": "1.0.1",
     "cordova-plugin-network-information": "1.0.1",
     "cordova-plugin-vibration": "1.2.0",
     "cordova-plugin-whitelist": "1.0.0",
-    "cordova-plugin-dialogs": "1.1.1",
     "cordova-plugin-splashscreen": "2.1.0"
 }
 // BOTTOM OF METADATA
