@@ -25,22 +25,28 @@
         "com.ionic.keyboard": {
             "PACKAGE_NAME": "com.ionicframework.demonstration581625"
         },
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.ionicframework.demonstration581625"
+        },
         "cordova-plugin-camera": {
             "PACKAGE_NAME": "com.ionicframework.demonstration581625"
         },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.ionicframework.demonstration581625"
         },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.ionicframework.demonstration581625"
+        },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.ionicframework.demonstration581625"
         },
-        "cordova-plugin-splashscreen": {
+        "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "com.ionicframework.demonstration581625"
         },
-        "cordova-plugin-whitelist": {
+        "cordova-plugin-file": {
             "PACKAGE_NAME": "com.ionicframework.demonstration581625"
         },
-        "cordova-plugin-contacts": {
+        "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.ionicframework.demonstration581625"
         },
         "cordova-plugin-network-information": {
@@ -49,16 +55,10 @@
         "cordova-plugin-vibration": {
             "PACKAGE_NAME": "com.ionicframework.demonstration581625"
         },
-        "cordova-plugin-geolocation": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.ionicframework.demonstration581625"
         },
-        "cordova-plugin-battery-status": {
-            "PACKAGE_NAME": "com.ionicframework.demonstration581625"
-        },
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "com.ionicframework.demonstration581625"
-        },
-        "cordova-plugin-dialogs": {
+        "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.ionicframework.demonstration581625"
         }
     },

@@ -2,11 +2,11 @@
  * Created by yulin on 7/12/2015.
  */
 define([
-  'cordova',
   'ionic',
   'home/nameSpace',
   'function/nameSpace',
-  'mine/nameSpace'
+  'mine/nameSpace',
+  'cordova'
 ], function () {
   'use strict';
   return angular.module('app', ['ionic', 'app.home', 'app.function', 'app.mine'], function ($compileProvider, $sceProvider) {

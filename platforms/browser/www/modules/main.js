@@ -3,10 +3,10 @@
  */
 require.config({
   paths: {
-    'cordova': '../cordova',
     'ionic': '../lib/ionic/js/ionic.bundle',
     'jquery': '../lib/jquery/dist/jquery',
-    'indexeddb': '../lib/IndexedDBShim/dist/IndexedDBShim'//解决indexdDB数据库的平台兼容问题
+    'indexeddb': '../lib/IndexedDBShim/dist/IndexedDBShim',//解决indexdDB数据库的平台兼容问题
+    'cordova': '../cordova'
   },
   shim: {
     'ionic': {

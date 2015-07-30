@@ -4,6 +4,7 @@
 define(["../module"], function (module) {
   module.controller("functionCtrl", ["$scope", "$ionicModal", function ($scope, $ionicModal) {
 
+    //modal page
     $ionicModal.fromTemplateUrl('my-modal.html', {
       scope: $scope,
       animation: 'slide-in-up'
@@ -17,6 +18,11 @@ define(["../module"], function (module) {
       $scope.modal.hide();
     };
 
+    /**
+     *
+     * @param name
+     * @param obj
+     */
     function getModalPage(name,obj) {
       $scope.listTitle = name;
       var s = "";
@@ -50,8 +56,6 @@ define(["../module"], function (module) {
           break;
       }
     };
-
-
 
 
     //take photo start
@@ -129,19 +133,6 @@ define(["../module"], function (module) {
       );
 
     };
-
-    //document.addEventListener("offline", onOffline, false);
-    //
-    //function onOffline() {
-    //  alert("offline");
-    //};
-    //
-    //document.addEventListener("online", onOnline, false);
-    //
-    //function onOnline() {
-    //  alert("online");
-    //}
-
     //check network end
 
 
@@ -218,7 +209,6 @@ define(["../module"], function (module) {
         console.dir(file);
       });
     }
-
 
 
   }])
