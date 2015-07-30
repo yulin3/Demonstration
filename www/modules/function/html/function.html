@@ -1,0 +1,67 @@
+<ion-view view-title="List Plugins">
+  <!--<ng-include src='page.homeHtml'></ng-include>-->
+  <ion-content>
+
+    <div class="list">
+      <a class="item item-icon-left" ng-click="takePhoto();">
+        <i class="icon ion-camera"></i>
+        Take photo
+      </a>
+
+      <a class="item item-icon-left" ng-click="getContactsInformaiton();">
+        <i class="icon ion-ios-telephone"></i>
+        Contacts Informaiton
+      </a>
+
+      <a class="item item-icon-left" ng-click="getDeviceInformation();">
+        <i class="icon ion-iphone"></i>
+        device Information
+      </a>
+
+      <a class="item item-icon-left" ng-click="checkNetwork();">
+        <i class="icon ion-wifi"></i>
+        Network
+      </a>
+
+      <a class="item item-icon-left" ng-click="startVibration();">
+        <i class="icon ion-radio-waves"></i>
+        Vibration
+      </a>
+
+      <a class="item item-icon-left" ng-click="cancelVibration();">
+        <i class="icon ion-record"></i>
+        Cancel Vibration
+      </a>
+
+      <a class="item item-icon-left" ng-click="getGeolocation();">
+        <i class="icon ion-ios-location"></i>
+        Geolocation
+      </a>
+
+      <a class="item item-icon-left" ng-click="getBattery();">
+        <i class="icon ion-battery-half"></i>
+        Battery
+      </a>
+
+      <a class="item item-icon-left" ng-click="getFileUrl();">
+        <i class="icon ion-folder"></i>
+        File
+      </a>
+
+    </div>
+
+
+    <script id="my-modal.html" type="text/ng-template">
+      <ion-modal-view>
+        <ion-header-bar class="row">
+          <a ng-click="closeModal();" class="col col-33 icon ion-ios-arrow-back">back</a>
+          <a class="col col-20 col-offset-50">{{listTitle}}</a>
+        </ion-header-bar>
+        <ion-content>
+          <div id="modalContent"></div>
+        </ion-content>
+      </ion-modal-view>
+    </script>
+
+  </ion-content>
+</ion-view>

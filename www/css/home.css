@@ -1,0 +1,22 @@
+/* Empty. Add your own CSS if you like */
+* {
+  margin: 0;
+  padding: 0;
+}
+.hHead {
+  height: 200px;
+  border: 1px solid #007aff;
+}
+.hMiddle {
+  height: 160px;
+  border: 1px solid #007aff;
+}
+button {
+  margin-left: 10px;
+  width: 40px;
+}
+
+img{
+  width: 400px;
+  height: 320px;
+}
