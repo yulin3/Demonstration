@@ -16,7 +16,81 @@ button {
   width: 40px;
 }
 
-img{
+#function {
   width: 400px;
   height: 320px;
+}
+
+
+
+
+
+
+
+
+/**/
+.hLContent {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+.hLHead {
+  width: 100%;
+  height: 50px;
+  background-color: #eeeeee;
+}
+.hLSelect {
+  background-color: #ffffff;
+  border: 1px solid #c1c1c1;
+  border-radius: 6px;
+}
+.hLMainList {
+  width: 100%;
+  height: 130px;
+  border-bottom: 1px solid #c1c1c1;
+}
+.hLImg {
+  width: 100%;
+  height: 110px;
+  padding: 10px;
+}
+.hLTFont {
+  font-size: 12px;
+  font-weight: bold;
+}
+.hLTFont2 {
+  font-size: 11px;
+  color: #b7b7b5;
+}
+.iconLocationColor {
+  font-size: 18px;
+  color: #38a1eb;
+}
+.hLBtn {
+  width: 80px;
+  height: 30px;
+  border-radius: 8px;
+  color: #4ca8ed;
+  background-color: #ffffff;
+  border: 1px solid #4ca8ed;
+}
+.hLPriceColor {
+  color: #ff8d22;
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+
+
+/**/
+.itemImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  text-align:center;
+  vertical-align: middle ;
+}
+.itemText {
+  line-height:35px;
 }

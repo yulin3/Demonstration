@@ -1,15 +1,45 @@
 <ion-view view-title="home">
 
-  <!--<ng-include src='page.homeHtml'></ng-include>-->
   <ion-content>
     <div class="row hHead">
-      <button ng-click="aa();">安妮</button>
+
+      <ion-slide-box auto-play="false" slide-interval="3000" show-pager="true" does-continue="true">
+        <ion-slide>
+          <img ng-src="./img/ionic.png" style="width: 100%;height: 248px;">
+        </ion-slide>
+        <ion-slide>
+          <img ng-src="http://img05.tooopen.com/images/20150517/tooopen_sy_124797574663.jpg" style="width: 100%;height: 248px;">
+        </ion-slide>
+        <ion-slide>
+          <img ng-src="http://img05.tooopen.com/images/20150418/tooopen_sy_119211617622.jpg" style="width: 100%;height:248px;">
+        </ion-slide>
+      </ion-slide-box>
 
 
     </div>
 
-    <div class="row hMiddle">
+    <!--<div class="hMiddle">-->
 
+    <!--</div>-->
+    <div class="item">
+      <p style="color:#262591;font-weight: bold;margin-bottom: -15px;margin-top: -9px">邻里论坛</p>
+    </div>
+    <div>
+      <div class="hLContent">
+        <div class="hLMainList row" ng-repeat="list in mainListData">
+          <div class="col col-33"><img class="hLImg" ng-src="{{list.img}}"></div>
+          <div class="col col-67">
+            <div style="margin-top: 15px;">
+              <span style="display:inline-block;float:left;color:#262591;font-weight: bold;">社区头条</span>
+              <span style="display:inline-block;float:right;color:#6B6666;">2015-06-15</span>
+            </div>
+            <div style="clear:both;"></div>
+            <div style="margin-top: 15px">
+              <p>采光，通风，隐私....楼间距对我们的生活到底有多重要？</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 
