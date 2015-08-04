@@ -210,6 +210,73 @@ define(["../module"], function (module) {
       });
     }
 
+    
+    //
+    $scope.getMotion = function () {
+      function onSuccess(acceleration) {
+        alert('Acceleration X: ' + acceleration.x + '\n' +
+        'Acceleration Y: ' + acceleration.y + '\n' +
+        'Acceleration Z: ' + acceleration.z + '\n' +
+        'Timestamp: '      + acceleration.timestamp + '\n');
+      };
+
+      function onError() {
+        alert('onError!');
+      };
+
+      navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
+    }
+    //
+
+
+
+    //
+    function onSuccess(acceleration) {
+      alert('Acceleration X: ' + acceleration.x + '\n' +
+      'Acceleration Y: ' + acceleration.y + '\n' +
+      'Acceleration Z: ' + acceleration.z + '\n' +
+      'Timestamp: '      + acceleration.timestamp + '\n');
+    };
+
+    function onError() {
+      alert('onError!');
+    };
+
+    var options = { frequency: 3000 };  // Update every 3 seconds
+
+    document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady() {
+      //var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
+    }
+    //
+
+    //
+    $scope.clearMotion = function() {
+      navigator.accelerometer.clearWatch(watchID);
+    };
+    //
+    
+    //  
+    $scope.getOrientation = function () {
+      function onSuccess(heading) {
+        alert('Heading: ' + heading.magneticHeading);
+      };
+
+      function onError(error) {
+        alert('CompassError: ' + error.code);
+      };
+
+      navigator.compass.getCurrentHeading(onSuccess, onError);
+    }
+    //
+
+    //
+    $scope.getGlobalizationorientation = function() {
+      console.log(navigator.globalization);
+    }
+    //
+
+
 
   }])
 })
