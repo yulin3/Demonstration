@@ -181,7 +181,7 @@ define(["../module"], function (module) {
     }
     //get bettery end
 
-
+    //get fileUrl start
     $scope.getFileUrl = function() {
       init();
     }
@@ -209,9 +209,9 @@ define(["../module"], function (module) {
         console.dir(file);
       });
     }
-
+    //get fileUrl end
     
-    //
+    //get motion
     $scope.getMotion = function () {
       function onSuccess(acceleration) {
         alert('Acceleration X: ' + acceleration.x + '\n' +
@@ -226,11 +226,8 @@ define(["../module"], function (module) {
 
       navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
     }
-    //
 
 
-
-    //
     function onSuccess(acceleration) {
       alert('Acceleration X: ' + acceleration.x + '\n' +
       'Acceleration Y: ' + acceleration.y + '\n' +
@@ -248,15 +245,15 @@ define(["../module"], function (module) {
     function onDeviceReady() {
       //var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
     }
-    //
 
-    //
+
+    //clear motion
     $scope.clearMotion = function() {
       navigator.accelerometer.clearWatch(watchID);
     };
-    //
+
     
-    //  
+    //get orientation
     $scope.getOrientation = function () {
       function onSuccess(heading) {
         alert('Heading: ' + heading.magneticHeading);
@@ -268,13 +265,13 @@ define(["../module"], function (module) {
 
       navigator.compass.getCurrentHeading(onSuccess, onError);
     }
-    //
 
-    //
+
+    //get globalizationorientation
     $scope.getGlobalizationorientation = function() {
       console.log(navigator.globalization);
     }
-    //
+
 
 
 
